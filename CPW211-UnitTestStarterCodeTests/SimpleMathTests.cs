@@ -23,14 +23,14 @@ namespace CPW211_UnitTestStarterCode.Tests
         }
 
         [TestMethod]
-        public void Multiply_TwoNumbers_ReturnsProduct(double num1, double num2)
+        public void Multiply_TwoNumbers_ReturnsProduct()
         {
             // Use a few pairs of values to test the Multiply method
             Assert.Fail();
         }
 
         [TestMethod]
-        public void Divide_DenominatorZero_ThrowsArgumentException(double num1, double num2)
+        public void Divide_DenominatorZero_ThrowsArgumentException()
         {
             // Divide by zero should throw an argument exception with a message
             // "Denominator cannot be zero"
@@ -38,16 +38,7 @@ namespace CPW211_UnitTestStarterCode.Tests
         }
 
         // TODO: Test Divide method with two valid numbers
-        [TestMethod]
-        public void Divide_TwoValidNumbers_ReturnsCorrectQuotient(double num1, double num2)
-        {
-            Assert.Fail();
-        }
 
         // TODO: Test subtract method with two valid numbers
-        public void Subtract_TwoValidNumbers_ReturnsCorrectResult(double num1, double num2)
-        {
-            Assert.Fail();
-        }
     }
 }

@@ -15,22 +15,34 @@ namespace CPW211_UnitTestStarterCode
     {
         public static double Add(double a, double b)
         {
-            throw new NotImplementedException();
+            return a + b;
         }
 
         public static double Subtract(double a, double b)
         {
-            throw new NotImplementedException();
+            if (a < b)
+            {
+                throw new ArgumentOutOfRangeException();
+            } else
+            {
+                return a - b;
+            }
         }
 
         public static double Multiply(double a, double b)
         {
-            throw new NotImplementedException();
+            return a * b;
         }
 
         public static double Divide(double a, double b)
         {
-            throw new NotImplementedException();
+            if (b == 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            } else
+            {
+                return a / b;
+            }
         }
     }
 }
